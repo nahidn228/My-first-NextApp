@@ -7,6 +7,8 @@ const AboutPage = () => {
     <div>
       <h1 className="text-xl">AboutPage</h1>
       <Button></Button>
+
+    
     </div>
   );
 };

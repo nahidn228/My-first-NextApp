@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,14 +16,15 @@ export const metadata = {
   description: "My first next js app",
 };
 
-export default function RootLayout({ children }) {
+export default function HomeLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+    <>
+      <main
+        className={`${geistSans.variable} ${geistMono.variable} antialiased grid grid-cols-12`}
       >
-        <main className="min-h-screen">{children}</main>
-      </body>
-    </html>
+        <div className="col-span-2 bg-amber-700 min-h-screen">side bar</div>
+        <div className="col-span-10">{children}</div>
+      </main>
+    </>
   );
 }

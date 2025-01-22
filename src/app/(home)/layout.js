@@ -1,5 +1,7 @@
+import Footer from "@/component/Footer";
+import Navbar from "@/component/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "./../globals.css";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,14 +18,16 @@ export const metadata = {
   description: "My first next js app",
 };
 
-export default function RootLayout({ children }) {
+export default function HomeLayout({ children }) {
   return (
-    <html lang="en">
-      <body
+    <>
+      <main
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <main className="min-h-screen">{children}</main>
-      </body>
-    </html>
+        <Navbar />
+        <section className="min-h-screen">{children}</section>
+        <Footer />
+      </main>
+    </>
   );
 }

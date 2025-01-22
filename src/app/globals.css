@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Custom global styles, if any */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
