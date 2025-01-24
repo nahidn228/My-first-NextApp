@@ -32,7 +32,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/login"
+                href="/api/auth/login"
                 className="text-white  transition duration-500 border-2  px-2 py-1 rounded-md hover:bg-black hover:text-white font-semibold"
               >
                 Login
@@ -40,7 +40,15 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                href="/logout"
+                href="/api/auth/register"
+                className="text-white  transition duration-500 border-2  px-2 py-1 rounded-md hover:bg-black hover:text-white font-semibold"
+              >
+                Register
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/api/auth/logout"
                 className="text-white  transition duration-500 border-2  px-2 py-1 rounded-md hover:bg-black hover:text-white font-semibold"
               >
                 Logout
