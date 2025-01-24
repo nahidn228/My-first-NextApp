@@ -17,8 +17,9 @@ const page = async () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 py-10">
         {data.map((item) => (
-          <Link href={"/"} key={item.id}>
-            <Card className="h-60">
+          
+          <Link href={`/blogs/${item.id}`} key={item.id} >
+            <Card className="">
               <CardHeader>
                 <CardTitle className="h-14">{item.title}</CardTitle>
                 <CardDescription className="overflow-y-scroll">
