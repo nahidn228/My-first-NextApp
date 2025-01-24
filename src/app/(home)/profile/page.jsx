@@ -18,7 +18,9 @@ export default function Admin() {
     </div>
   ) : (
     <div>
-      You have to <LoginLink>Login</LoginLink> to see this page
+      You have to{" "}
+      <LoginLink className="text-blue-500 font-medium">Login</LoginLink> to see
+      this page
     </div>
   );
 }

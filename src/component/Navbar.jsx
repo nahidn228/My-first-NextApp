@@ -24,16 +24,17 @@ const Navbar = async () => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link
-                href="/profile"
-                className="text-white  transition duration-500 border-2  px-2 py-1 rounded-md hover:bg-black hover:text-white font-semibold"
-              >
-                Profile
-              </Link>
-            </li>
+
             {user ? (
               <>
+                <li>
+                  <Link
+                    href="/profile"
+                    className="text-white  transition duration-500 border-2  px-2 py-1 rounded-md hover:bg-black hover:text-white font-semibold"
+                  >
+                    Profile
+                  </Link>
+                </li>
                 <li>
                   <Link
                     href="/dashboard"
