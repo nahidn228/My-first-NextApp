@@ -2,7 +2,7 @@
 
 const Footer = () => {
   return (
-    <div className=" min-h-40">
+    <div className="container mx-auto">
       <p className="text-center bg-gray-400 text-3xl">this is Footer</p>
     </div>
   );

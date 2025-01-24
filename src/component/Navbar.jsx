@@ -4,41 +4,51 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between bg-gray-500">
-      {/* Logo Section */}
-      <div className=" text-xl font-semibold">
-        <h2>Logo</h2>
-      </div>
+    <div className="bg-gray-500">
+      <nav className="flex justify-between container mx-auto p-4">
+        {/* Logo Section */}
+        <div className=" text-xl font-semibold">
+          <h2>Logo</h2>
+        </div>
 
-      {/* Navigation Links */}
-      <div>
-        <ul className="flex gap-6 items-center">
-          <li>
-            <Link
-              href="/"
-              className="text-white hover:text-gray-300 transition duration-200"
-            >
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/about"
-              className="text-white hover:text-gray-300 transition duration-200"
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              href="/products"
-              className="text-white hover:text-gray-300 transition duration-200"
-            >
-              Products
-            </Link>
-          </li>
-        </ul>
-      </div>
+        {/* Navigation Links */}
+        <div>
+          <ul className="flex gap-6 items-center">
+            <li>
+              <Link
+                href="/"
+                className="text-white  transition duration-500 border-2  px-2 py-1 rounded-md hover:bg-black hover:text-white font-semibold"
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/profile"
+                className="text-white  transition duration-500 border-2  px-2 py-1 rounded-md hover:bg-black hover:text-white font-semibold"
+              >
+                Profile
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/login"
+                className="text-white  transition duration-500 border-2  px-2 py-1 rounded-md hover:bg-black hover:text-white font-semibold"
+              >
+                Login
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/logout"
+                className="text-white  transition duration-500 border-2  px-2 py-1 rounded-md hover:bg-black hover:text-white font-semibold"
+              >
+                Logout
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
   );
 };
