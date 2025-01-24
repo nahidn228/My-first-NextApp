@@ -39,7 +39,7 @@ const page = async () => {
           </Link>
         ))}
       </div>
-      <div className="float-right">
+      <div className="flex justify-end">
         <Link href={"/blogs"}>
           <Button>See All Posts</Button>
         </Link>
