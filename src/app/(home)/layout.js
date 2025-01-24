@@ -1,6 +1,7 @@
 import Footer from "@/component/Footer";
 import Navbar from "@/component/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
+import { AuthProvider } from "../AuthProvider";
 import "./../globals.css";
 
 const geistSans = Geist({
@@ -20,7 +21,7 @@ export const metadata = {
 
 export default function HomeLayout({ children }) {
   return (
-    <>
+    <AuthProvider>
       <main
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -28,6 +29,6 @@ export default function HomeLayout({ children }) {
         <section className="min-h-screen">{children}</section>
         <Footer />
       </main>
-    </>
+    </AuthProvider>
   );
 }

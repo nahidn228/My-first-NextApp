@@ -1,14 +1,3 @@
-// export default function Home() {
-//
-//   return (
-//     <div className="container mx-auto p-4">
-//       <div>
-//         <h1 className="text-xl">This is Home Page</h1>
-//       </div>
-//       <form></form>
-//     </div>
-//   );
-// }
 import {
   Card,
   CardDescription,

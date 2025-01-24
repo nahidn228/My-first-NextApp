@@ -10,7 +10,7 @@ const Navbar = async () => {
       <nav className="flex justify-between container mx-auto p-4">
         {/* Logo Section */}
         <div className=" text-xl font-semibold">
-          <h2>Logo</h2>
+          <h2>Blogs</h2>
         </div>
 
         {/* Navigation Links */}
